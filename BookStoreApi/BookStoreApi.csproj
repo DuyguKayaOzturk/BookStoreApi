@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Dapper" Version="2.0.151" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="deneme\obj\Debug\net7.0\deneme.GlobalUsings.g.cs" />
+    <Compile Remove="deneme\Controllers\WeatherForecastController.cs" />
+    <Compile Remove="deneme\Program.cs" />
+    <Compile Remove="deneme\WeatherForecast.cs" />
+    <Compile Remove="deneme\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="deneme\obj\Debug\net7.0\deneme.AssemblyInfo.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="deneme\Properties\launchSettings.json" />
+    <Content Remove="deneme\appsettings.Development.json" />
+    <Content Remove="deneme\appsettings.json" />
+    <Content Remove="deneme\obj\project.assets.json" />
+    <Content Remove="deneme\obj\deneme.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="deneme\obj\Debug\net7.0\deneme.csproj.AssemblyReference.cache" />
+    <None Remove="deneme\obj\deneme.csproj.nuget.g.props" />
+    <None Remove="deneme\obj\deneme.csproj.nuget.g.targets" />
+    <None Remove="deneme\obj\project.nuget.cache" />
+    <None Remove="deneme\obj\Debug\net7.0\deneme.assets.cache" />
+    <None Remove="deneme\obj\Debug\net7.0\deneme.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="deneme\obj\Debug\net7.0\deneme.AssemblyInfoInputs.cache" />
+    <None Remove="Repository\" />
+    <None Remove="Model\" />
+    <None Remove="Endpoints\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\" />
+    <Folder Include="Model\" />
+    <Folder Include="Endpoints\" />
+  </ItemGroup>
+</Project>
