@@ -28,12 +28,12 @@
 -DELETE /books/{id}
 •Deletes a book based on ID.
 
-4. Filtering: oImplement the option to filter the book list based on ▪Year of publication and Author through query parameters.
+4. Filtering: Implement the option to filter the book list based on ▪Year of publication and Author through query parameters.
    
 -For example:
-•GET /books?publicationYear=2022(should return books published in 2022)
-•GET /books?author=Ola(should return books written by an author named "Ola")
-•GET /books?title=[title]Returns books based on title.
+-GET /books?publicationYear=2022(should return books published in 2022)
+-GET /books?author=Ola(should return books written by an author named "Ola")
+-GET /books?title=[title]Returns books based on title.
 
 ## Instructions:
 
