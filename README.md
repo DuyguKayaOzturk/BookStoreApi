@@ -39,7 +39,7 @@
 
 1.Create a new ASP.NET Core minimal API application.
 
-2. Design the database and create it using the MySQL script
+2.Design the database and create it using the MySQL script
 
 3.Use ADO.net to perform CRUD operations.
 
