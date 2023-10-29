@@ -19,12 +19,16 @@
 
 -GET /books
 •Returns a list of all books.
+
 -GET /books/{id}
 •Returns a book based on ID.
+
 -POST /books
 •Adding a new book.
+
 -PUT /books/{id}
 •Updates an existing book based on ID.
+
 -DELETE /books/{id}
 •Deletes a book based on ID.
 
