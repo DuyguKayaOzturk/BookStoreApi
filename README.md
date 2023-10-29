@@ -38,7 +38,11 @@
 ## Instructions:
 
 1.Create a new ASP.NET Core minimal API application.
+
 2. Design the database and create it using the MySQL script
+   
 3.Use ADO.net to perform CRUD operations.
+
 4.Implemented the necessary endpoints in your minimal API.
+
 5.Test your API with an API client such as Postman, Swagger, IDE tool for http request or using a web browser
